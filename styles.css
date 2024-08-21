@@ -1,0 +1,51 @@
+
+
+
+
+.container{
+    display:flex;
+    flex:auto;
+}
+/*Starting on the left side */
+.left{
+    background-image: url(./leaf.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    display:flex;
+    flex-flow: column nowrap;
+   
+    justify-content: space-between;
+}
+
+.logo-container{
+    background-color: rgba(0,0,0,0.4);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+    
+}
+
+#odin-logo{
+    width: 50px;
+    
+}
+
+
+
+#pic-creds { 
+    text-align: center;
+}
+
+#pic-creds a{
+    color: white;  
+}
+
+/* Starting work on right side */
+
+#intro{
+    font-weight: 700;
+    padding: 20px;
+}
