@@ -1,95 +1,138 @@
-
 body{
-    margin: 0;
+    display: flex;
+
 }
 
-
-.container{
-    display:flex;
-    
-    
-}
-/*Starting on the left side */
 .left{
-    background-image: url(./leaf.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    color: white;
-    display:flex;
-    flex: 1 1 auto;
-    flex-flow: column nowrap;
-    width: 30vw;
+    width: 35vw;
     height: 100vh;
-    justify-content: space-between;
-}
-
-.logo-container{
-    background-color: rgba(0,0,0,0.4);
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 20%;
-    
-}
-
-#odin-logo{
-    width: 50px;
-    
-}
-
-
-
-#pic-creds { 
-    text-align: center;
-    font-size: 8px;
-}
-
-#pic-creds a{
-    color: white;  
-}
-
-/* Starting work on right side */
-
-#intro{
-    font-weight: 700;
-    padding: 20px;
-    margin-top: 15%;
-}
-
-.right{
-    background-color: seashell;
+    background-image: url(./leaf.jpg);
+    background-size: cover;
     display: flex;
     flex-flow: column nowrap;
-    flex: 1 0 auto;
-    width: 70vw;
+}
+
+
+.right{
+    width: 65vw;
     height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+/* Banner attributes */
+
+.banner{
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    position: relative;
+    top: 30%;
+    color: white;
+    justify-content: center;
+    font-size: 10px;
     
 }
+.banner p{
+    font-size: 3em;
+}
+
+#logo{
+    height: 10em;
+}
+
+.photo-creds{
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.photo-creds a{
+    color: white;
+    flex: 1;
+
+}
+
+
+/*Section styling */
+
+.section1, .section2, .section3{
+    padding: 20px;
+}
+.section1, .section3{
+    font-weight:700;
+    margin-left: 20px;
+}
+
+.section1{
+    font-size: 20px;
+    text-wrap: wrap;
+}
+
+.section2{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 20px;
+    flex: 1;
+
+}
+
+.section2-container{
+    background-color: white;
+    box-shadow: 0px 3px 5px gray;
+}
+
+.section3{
+    margin-top: 30px;
+}
+/* Form styling */
 .inputs{
-    width : 500 px;
-    display:flex;
-    flex-flow: row wrap;
-    padding: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+}
+
+.left-inputs, .right-inputs{
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .input-block{
-    display:flex;
-    flex-direction: column;
-    margin: 5px;
-    flex: 0 0 48%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 10px;
+}
+
+input{
+    border: solid 2px gray;
+    border-radius: 3px;
+}
+
+input:hover{
+    border: solid 2px blue;
+}
+
+input:focus{
+    outline: none;
+    border: solid 2px blue;
 }
 
 
 
-#submit{
-    border: solid 3px black;
+/*This might be better to put in javascript ?
+
+.banner:invalid{
+    border-color:red;
+}
+*/
+
+/* Button Styling */
+button{
+    border-radius: 3px;
     padding: 14px 40px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-#login{
-    margin-left: 20px;
+    color: white;
+    font-size: 18px;
+    background-color: green;
+    cursor: pointer;
 }
