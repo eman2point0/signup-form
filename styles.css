@@ -1,10 +1,13 @@
 
-
+body{
+    margin: 0;
+}
 
 
 .container{
     display:flex;
-    flex:auto;
+    
+    
 }
 /*Starting on the left side */
 .left{
@@ -13,8 +16,10 @@
     background-size:cover;
     color: white;
     display:flex;
+    flex: 1 1 auto;
     flex-flow: column nowrap;
-   
+    width: 30vw;
+    height: 100vh;
     justify-content: space-between;
 }
 
@@ -37,6 +42,7 @@
 
 #pic-creds { 
     text-align: center;
+    font-size: 8px;
 }
 
 #pic-creds a{
@@ -48,4 +54,34 @@
 #intro{
     font-weight: 700;
     padding: 20px;
+    margin-top: 15%;
 }
+
+.right{
+    background-color: seashell;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    width: 70vw;
+    height: 100vh;
+    
+}
+
+
+#signup{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#signup .input-block{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    
+    margin: 5px;
+}
+
