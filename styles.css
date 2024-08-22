@@ -61,27 +61,35 @@ body{
     background-color: seashell;
     display: flex;
     flex-flow: column nowrap;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     width: 70vw;
     height: 100vh;
     
 }
-
-
-#signup{
-
-    display: flex;
+.inputs{
+    width : 500 px;
+    display:flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-
+    padding: 5px;
 }
 
-#signup .input-block{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    
+.input-block{
+    display:flex;
+    flex-direction: column;
     margin: 5px;
+    flex: 0 0 48%;
 }
 
+
+
+#submit{
+    border: solid 3px black;
+    padding: 14px 40px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#login{
+    margin-left: 20px;
+}
